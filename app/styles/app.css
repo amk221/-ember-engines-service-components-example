@@ -1,0 +1,9 @@
+.flash-messages {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.flash-message {
+  border: 1px solid silver;
+  padding: 10px;
+}

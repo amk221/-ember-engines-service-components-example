@@ -6,7 +6,18 @@ import config from './config/environment';
 const App = Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+
+  engines: {
+    foo: {
+      dependencies: {
+        externalRoutes: {},
+        services: [
+          'flash-message'
+        ]
+      }
+    }
+  },
 });
 
 loadInitializers(App, config.modulePrefix);
